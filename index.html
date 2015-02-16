@@ -18,12 +18,11 @@
 	</style>
 </head>
 <body>
-	<div class='center' style='width:300px;'>
+	<div class='center' style='width:100%;max-width:300px;'>
 		<div class='headline'>
 			<h1>French 75</h1>
 		</div>
-		<br />
-		<img src='./f75-300x400.jpg' /><br />
+		<img src='./f75-300x400.jpg' style='width:100%;max-width:300px;' /><br />
 		<div class='headline'>
 			<h3>Recipe</h3>
 		</div>
@@ -46,6 +45,27 @@
 			<li>Garnish with lemon twist</li>
 		</ol>
 		<br />
+		<a class='twitter-timeline'
+			href='https://twitter.com/hashtag/french75'
+			data-widget-id='567421303141855232'>#french75 Tweets</a>
 	</div>
+
+	<!-- Twitter -->
+	<script>
+		window.twttr = (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+				t = window.twttr || {};
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			t._e = [];
+			t.ready = function(f) {
+				t._e.push(f);
+			};
+			return t;
+		}(document, 'script', 'twitter-wjs'));
+	</script>
 </body>
 </html>
